@@ -1,9 +1,15 @@
-'use strict';
+;(function(){
+  'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .config(function ($provide) {
+  angular
+    .module('<%= scriptAppName %>')
+    .config(<%= cameledName %>);
+  
+  /* @inject */
+  function <%= cameledName %>($provide) {
     $provide.decorator('<%= cameledName %>', function ($delegate) {
       // decorate the $delegate
       return $delegate;
     });
-  });
+  }
+}).call(this);
