@@ -1,11 +1,19 @@
-'use strict';
+;(function(){
+  'use strict';
+  //Setting up route
+  angular
+    .module('<%= scriptAppName %>')
+    .config( Configuration );
 
-angular.module('<%= scriptAppName %>')
-  .config(function ($stateProvider) {
+  /* @inject */
+  function Configuration($stateProvider) {
+    // <%= humanized %> state routing
     $stateProvider
       .state('<%= name %>', {
         url: '<%= route %>',
         templateUrl: '<%= htmlUrl %>',
-        controller: '<%= classedName %>Ctrl'
+        controller: '<%= classedName %>Controller'
       });
-  });
+  }
+
+}).call(this);

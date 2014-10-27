@@ -17,6 +17,8 @@ var Generator = module.exports = function Generator() {
 
   this.cameledName = this._.camelize(this.name);
   this.classedName = this._.classify(this.name);
+  this.humanized = this._.humanize(this.name);
+  this.slugified = this._.slugify(this._.humanize(this.name));
 
   this.hasFilter = function(filter) {
     return this.config.get('filters').indexOf(filter) !== -1;

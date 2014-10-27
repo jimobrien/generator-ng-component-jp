@@ -1,10 +1,18 @@
+;(function(){
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .config(function ($routeProvider) {
+angular
+  .module('<%= scriptAppName %>')
+  .config(Configuration);
+
+  /* @inject */
+  function Configuration($routeProvider) {
+    // <%= humanized %> state routing
     $routeProvider
       .when('<%= route %>', {
         templateUrl: '<%= htmlUrl %>',
-        controller: '<%= classedName %>Ctrl'
+        controller: '<%= classedName %>Controller'
       });
-  });
+  }
+
+}).call(this);

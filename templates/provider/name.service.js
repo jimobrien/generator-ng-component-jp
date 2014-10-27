@@ -1,25 +1,31 @@
-'use strict';
+;(function(){
+  'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .provider('<%= cameledName %>', function () {
+  angular
+    .module('<%= scriptAppName %>')
+    .provider('<%= cameledName %>', <%= cameledName %>);
 
-    // Private variables
-    var salutation = 'Hello';
+    function <%= cameledName %>() {
 
-    // Private constructor
-    function Greeter() {
-      this.greet = function () {
-        return salutation;
+      // Private variables
+      var salutation = 'Hello';
+
+      // Private constructor
+      function Greeter() {
+        this.greet = function () {
+          return salutation;
+        };
+      }
+
+      // Public API for configuration
+      this.setSalutation = function (s) {
+        salutation = s;
+      };
+
+      // Method for instantiating
+      this.$get = function () {
+        return new Greeter();
       };
     }
 
-    // Public API for configuration
-    this.setSalutation = function (s) {
-      salutation = s;
-    };
-
-    // Method for instantiating
-    this.$get = function () {
-      return new Greeter();
-    };
-  });
+}).call(this);
