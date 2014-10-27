@@ -1,12 +1,14 @@
 'use strict'
 
 angular.module '<%= scriptAppName %>'
-.factory '<%= cameledName %>', ->
+  .factory '<%= cameledName %>', <%= classedName %>
 
-  # Service logic
-  # ...
-  meaningOfLife = 42
 
-  # Public API here
-  someMethod: ->
-    meaningOfLife
+<%= classedName %> ->
+  instance: 
+    someMethod: someMethod
+
+  instance
+
+  someMethod () ->
+    true

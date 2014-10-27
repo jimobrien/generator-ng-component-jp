@@ -1,4 +1,4 @@
-# generator-ng-component [![Build Status](https://secure.travis-ci.org/DaftMonk/generator-ng-component.png?branch=master)](https://travis-ci.org/DaftMonk/generator-ng-component)
+# generator-ng-component-jp [![Build Status](https://secure.travis-ci.org/jimobrien/generator-ng-component-jp.png?branch=master)](https://travis-ci.org/DaftMonk/generator-ng-component-jp)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -7,10 +7,10 @@
 
 ### Yeoman Generators
 
-To install generator-ng-component from npm, run:
+To install generator-ng-component-jp from npm, run:
 
 ```
-$ npm install -g generator-ng-component
+$ npm install -g generator-ng-component-jp
 ```
 
 Finally, initiate the generator:
