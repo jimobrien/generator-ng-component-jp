@@ -1,9 +1,8 @@
 ;(function(){
 'use strict';
-
-  angular
-    .module('<%= scriptAppName %>')
-    .directive('<%= cameledName %>', <%= cameledName %>);
+angular
+  .module('<%= scriptAppName %>')
+  .directive('<%= cameledName %>', <%= cameledName %>);
 
   /* @inject */
   function <%= cameledName %>() {
@@ -16,4 +15,5 @@
     function postLink(scope, element, attrs) {
     }
   }
+  
 }).call(this);

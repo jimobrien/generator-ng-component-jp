@@ -1,9 +1,8 @@
 ;(function(){
-  'use strict';
-
-  angular
-    .module('<%= scriptAppName %>')
-    .factory('<%= classedName %>', <%= classedName %>);
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .factory('<%= classedName %>', <%= classedName %>);
 
   /* @inject */
   function <%= classedName %>() {
@@ -14,12 +13,14 @@
     this.set = function(key, val) {
       return this._storage[key] = val;
     }
+    
     this.get = function(key) {
       if (key){
         return this._storage[key];
       }
       return this._storage;
     }
+    
     this.remove = function(key){
       if (key){
         var result = this._storage[key];

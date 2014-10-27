@@ -1,13 +1,13 @@
 ;(function(){
-  'use strict';
-
-  angular
-    .module('<%= scriptAppName %>')
-    .controller('<%= classedName %>Controller', <%= classedName %>Controller);
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .controller('<%= classedName %>Ctrl', <%= classedName %>Ctrl);
 
   /* @inject */
-  function <%= classedName %>Controller($scope) {
+  function <%= classedName %>Ctrl($scope) {
     // <%= humanized %> controller logic
     // ...
   }
+  
 }).call(this);

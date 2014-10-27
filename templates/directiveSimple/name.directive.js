@@ -1,7 +1,11 @@
+;(function(){
 'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .directive('<%= cameledName %>', <%= cameledName %>);
 
-angular.module('<%= scriptAppName %>')
-  .directive('<%= cameledName %>', function () {
+  /* @inject */
+  function <%= cameledName %>() {
     return {
       template: '<div></div>',
       restrict: 'EA',
@@ -9,4 +13,6 @@ angular.module('<%= scriptAppName %>')
         element.text('this is the <%= cameledName %> directive');
       }
     };
-  });
+  }
+  
+}).call(this);

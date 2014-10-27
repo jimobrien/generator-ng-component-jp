@@ -1,9 +1,8 @@
 ;(function(){
-  'use strict';
-  //Setting up route
-  angular
-    .module('<%= scriptAppName %>')
-    .config( Configuration );
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .config(Configuration);
 
   /* @inject */
   function Configuration($stateProvider) {

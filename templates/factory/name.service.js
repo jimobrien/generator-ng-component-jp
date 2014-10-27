@@ -1,8 +1,8 @@
 ;(function(){
-  'use strict';
-
-  angular.module('<%= scriptAppName %>')
-    .factory('<%= classedName %>', classedName);
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .factory('<%= classedName %>', classedName);
 
   /* @inject */
   function <%= classedName %>() {
@@ -19,6 +19,6 @@
     function someMethod() {
       return true;
     }
-
   }
+  
 }).call(this);

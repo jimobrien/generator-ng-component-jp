@@ -1,9 +1,8 @@
 ;(function(){
-  'use strict';
-
-  angular
-    .module('<%= scriptAppName %>')
-    .filter('<%= cameledName %>', <%= cameledName %>);
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .filter('<%= cameledName %>', <%= cameledName %>);
 
   /* @inject */
   function <%= cameledName %>() {
@@ -14,4 +13,5 @@
       return '<%= cameledName %> filter: ' + input;
     };
   }
+  
 }).call(this);

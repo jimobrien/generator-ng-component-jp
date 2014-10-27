@@ -1,9 +1,8 @@
 ;(function(){
-  'use strict';
-
-  angular
-    .module('<%= scriptAppName %>')
-    .config(<%= cameledName %>);
+'use strict';
+angular
+  .module('<%= scriptAppName %>')
+  .config(<%= cameledName %>);
   
   /* @inject */
   function <%= cameledName %>($provide) {
@@ -12,4 +11,5 @@
       return $delegate;
     });
   }
+  
 }).call(this);
