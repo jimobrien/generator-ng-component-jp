@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .controller('<%= classedName %>Ctrl', <%= classedName %>Ctrl);
 
-  /* @inject */
+  /* @ngInject */
   function <%= classedName %>Ctrl($scope) {
     // <%= humanized %> controller logic
     // ...

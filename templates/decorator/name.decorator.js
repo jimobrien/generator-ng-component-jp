@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .config(<%= cameledName %>);
   
-  /* @inject */
+  /* @ngInject */
   function <%= cameledName %>($provide) {
     $provide.decorator('<%= cameledName %>', function ($delegate) {
       // decorate the $delegate

@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .filter('<%= cameledName %>', <%= cameledName %>);
 
-  /* @inject */
+  /* @ngInject */
   function <%= cameledName %>() {
     return function(input) {
       // <%= humanized %> directive logic

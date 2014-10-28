@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .config(Configuration);
 
-  /* @inject */
+  /* @ngInject */
   function Configuration($routeProvider) {
     // <%= humanized %> state routing
     $routeProvider

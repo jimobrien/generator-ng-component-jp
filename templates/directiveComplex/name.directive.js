@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .directive('<%= cameledName %>', <%= cameledName %>);
 
-  /* @inject */
+  /* @ngInject */
   function <%= cameledName %>() {
     return {
       templateUrl: '<%= htmlUrl %>',

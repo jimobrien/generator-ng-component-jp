@@ -4,7 +4,7 @@ angular
   .module('<%= scriptAppName %>')
   .factory('<%= classedName %>', classedName);
 
-  /* @inject */
+  /* @ngInject */
   function <%= classedName %>() {
 
     // Define private variables here . . .
